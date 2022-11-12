@@ -16,17 +16,26 @@ const Sidebar = () => {
           <img src={logo} alt="" />
         </div>
         <ul className="sidebarList">
-          <li>
-            <Link className="link" to="/"></Link>
+          <li className="sItem">
+            <Link className="link" to="/">
+              Dashboard
+            </Link>
           </li>
-          <li>
+          <li className="sItem">
             <Link className="link" to="/marketing">
               Marketing
             </Link>
           </li>
-          <li>
+          <li className="sItem">
             <li onClick={() => setOpenOne(!openOne)}>
-              Analytics<i className="bx bx-chevron-down"></i>
+              Analytics
+              <i
+                style={{
+                  transform: openOne ? "rotate(180deg)" : "rotate(0deg)",
+                  transition: "0.3s",
+                }}
+                className="bx bx-chevron-down"
+              ></i>
             </li>
             <ul style={{ display: openOne ? "block" : "none" }}>
               <li>
@@ -34,7 +43,7 @@ const Sidebar = () => {
                   Finance
                 </Link>
               </li>
-              <li>
+              <li className="sItem">
                 <Link className="link" to="/analytics/order">
                   Order
                 </Link>
@@ -46,14 +55,21 @@ const Sidebar = () => {
               </li>
             </ul>
           </li>
-          <li>
+          <li className="sItem">
             <Link className="link" to="/order">
               Order
             </Link>
           </li>
-          <li onClick={() => setOpenTwo(!openTwo)}>
+          <li className="sItem" onClick={() => setOpenTwo(!openTwo)}>
             <li>
-              Finance<i className="bx bx-chevron-down"></i>
+              Finance
+              <i
+                style={{
+                  transform: openTwo ? "rotate(180deg)" : "rotate(0deg)",
+                  transition: "0.3s",
+                }}
+                className="bx bx-chevron-down"
+              ></i>
             </li>
             <ul style={{ display: openTwo ? "block" : "none" }}>
               <li>
@@ -78,11 +94,23 @@ const Sidebar = () => {
               </li>
             </ul>
           </li>
-          <li onClick={() => setOpenThree(!openThree)}>
+          <li className="sItem" onClick={() => setOpenThree(!openThree)}>
             <li>
-              Students<i className="bx bx-chevron-down"></i>
+              Students
+              <i
+                style={{
+                  transform: openThree ? "rotate(180deg)" : "rotate(0deg)",
+                  transition: "0.3s",
+                }}
+                className="bx bx-chevron-down"
+              ></i>
             </li>
-            <ul style={{ display: openThree ? "block" : "none" }}>
+            <ul
+              style={{
+                display: openThree ? "block" : "none",
+                transition: ".3s",
+              }}
+            >
               <li>
                 <Link className="link" to="/students/attendance">
                   Attendance
@@ -105,9 +133,16 @@ const Sidebar = () => {
               </li>
             </ul>
           </li>
-          <li onClick={() => setOpenFour(!openFour)}>
+          <li className="sItem" onClick={() => setOpenFour(!openFour)}>
             <li>
-              Groups<i className="bx bx-chevron-down"></i>
+              Groups
+              <i
+                style={{
+                  transform: openFour ? "rotate(180deg)" : "rotate(0deg)",
+                  transition: "0.3s",
+                }}
+                className="bx bx-chevron-down"
+              ></i>
             </li>
             <ul style={{ display: openFour ? "block" : "none" }}>
               <li>
@@ -132,14 +167,21 @@ const Sidebar = () => {
               </li>
             </ul>
           </li>
-          <li>
+          <li className="sItem">
             <Link className="link" to="/courses">
               Courses
             </Link>
           </li>
-          <li onClick={() => setOpenFive(!openFive)}>
+          <li className="sItem" onClick={() => setOpenFive(!openFive)}>
             <li>
-              Employees<i className="bx bx-chevron-down"></i>
+              Employees
+              <i
+                style={{
+                  transform: openFive ? "rotate(180deg)" : "rotate(0deg)",
+                  transition: "0.3s",
+                }}
+                className="bx bx-chevron-down"
+              ></i>
             </li>
             <ul style={{ display: openFive ? "block" : "none" }}>
               <li>
@@ -154,9 +196,16 @@ const Sidebar = () => {
               </li>
             </ul>
           </li>
-          <li onClick={() => setOpenSix(!openSix)}>
+          <li className="sItem" onClick={() => setOpenSix(!openSix)}>
             <li>
-              Settings<i className="bx bx-chevron-down"></i>
+              Settings
+              <i
+                style={{
+                  transform: openSix ? "rotate(180deg)" : "rotate(0deg)",
+                  transition: "0.3s",
+                }}
+                className="bx bx-chevron-down"
+              ></i>
             </li>
             <ul style={{ display: openSix ? "block" : "none" }}>
               <li>

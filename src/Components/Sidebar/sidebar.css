@@ -1,16 +1,16 @@
 .sidebar {
-	width: 18vw;
-	background-color: rgb(48, 54, 54);
-	display: flex;
-	justify-content: center;
-	max-height: 100vh;
-	overflow-y: scroll;
+  width: 18vw;
+  background-color: rgb(48, 54, 54);
+  display: flex;
+  justify-content: center;
+  max-height: 100vh;
+  overflow-y: scroll;
 }
 .sidebarContainer {
-	/* overflow: scroll; */
+  overflow-y: scroll;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  /* align-items: center; */
 }
 .logo {
   width: 100%;
@@ -25,17 +25,24 @@ img {
   width: 100%;
   object-fit: cover;
 }
-.sidebarList{
-	display: flex;
-	flex-direction: column;
-	color: white;
+.sidebarList {
+  display: flex;
+  flex-direction: column;
+  color: white;
 }
-.sidebarList li{
-	list-style: none;
-	color: white;
-	font-size: 18px;
+.sidebarList li {
+  list-style: none;
+  color: white;
+  font-size: 20px;
 }
 
-.sidebarClose{
-	width: 5vw;
+.sItem {
+  width: 100%;
+  position: relative;
 }
+.sItem ul {
+  display: flex;
+}
+
+
+
