@@ -1,0 +1,41 @@
+.navbar{
+	width: 82vw;
+	display: flex;
+	align-items: center;
+	background-color: brown;
+	justify-content: space-between;
+	padding: 0 20px;
+	box-sizing: border-box;
+	height: 100px;
+}
+.nContainerLEft{
+	display: flex;
+	align-items: center;
+	justify-content: flex-start	;
+	width: 50%;
+}
+.nContainerLEft ul{
+	display: flex;
+	justify-content: space-between;
+	gap: 20px;
+}
+
+.nContainerRight{
+	display: flex;
+	width: 50%;
+	align-items: center;
+	justify-content: flex-end;
+	gap: 20px;
+	
+}
+button{
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: transparent;
+	color: white;
+	border: none;
+	padding: 5px;
+	font-size: 25px;
+}
