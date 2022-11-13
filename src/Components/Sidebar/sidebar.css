@@ -47,3 +47,14 @@ img {
 .sItem ul li {
   margin-top: 10px;
 }
+
+.sListItem{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 8px;
+}
+
+.sIcon{
+  color: aqua;
+}
