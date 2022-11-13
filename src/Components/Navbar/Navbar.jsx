@@ -7,7 +7,7 @@ const Navbar = () => {
     <div className="navbar">
       <div className="navbarContainer">
         <div className="nContainerLEft">
-          <button>
+          <button style={{display : "none"}}>
             <i className="bx bx-menu"></i>
           </button>
           <ul>

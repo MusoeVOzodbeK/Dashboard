@@ -1,5 +1,5 @@
 .sidebar {
-  width: 18vw;
+  width: 250px;
   background-color: rgb(48, 54, 54);
   display: flex;
   justify-content: center;
@@ -8,7 +8,9 @@
 .sidebarContainer {
   overflow-y: scroll;
   display: flex;
+  overflow-x: hidden;
   flex-direction: column;
+  align-items: flex-start;
 }
 .logo {
   width: 100%;
@@ -48,13 +50,27 @@ img {
   margin-top: 10px;
 }
 
-.sListItem{
+.sListItem {
   display: flex;
   align-items: center;
   justify-content: flex-start;
   gap: 8px;
 }
 
-.sIcon{
-  color: aqua;
+.sIcon {
+  color: white;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: #888;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
