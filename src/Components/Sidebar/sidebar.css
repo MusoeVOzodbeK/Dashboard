@@ -3,14 +3,12 @@
   background-color: rgb(48, 54, 54);
   display: flex;
   justify-content: center;
-  max-height: 100vh;
-  overflow-y: scroll;
+  height: 100vh;
 }
 .sidebarContainer {
   overflow-y: scroll;
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
 }
 .logo {
   width: 100%;
@@ -34,6 +32,7 @@ img {
   list-style: none;
   color: white;
   font-size: 20px;
+  margin-top: 13px;
 }
 
 .sItem {
@@ -41,8 +40,10 @@ img {
   position: relative;
 }
 .sItem ul {
+  gap: 40px;
   display: flex;
 }
 
-
-
+.sItem ul li {
+  margin-top: 10px;
+}

@@ -1,5 +1,14 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { BiGroup } from "react-icons/bi";
+import { MdOutlineGroups } from "react-icons/md";
+import { CiSettings } from "react-icons/ci";
+import { GrUserSettings, GrIntegration } from "react-icons/gr";
+import { SiGoogleclassroom } from "react-icons/si";
+import { FiMessageSquare } from "react-icons/fi";
+import { AiOutlineUser, AiOutlineSetting } from "react-icons/ai";
+import { TbCurrencyDollarCanadian } from "react-icons/tb";
+import {GiProgression} from "react-icons/gi"
 import "./sidebar.css";
 import logo from "../../assets/Group 1 (3).png";
 const Sidebar = () => {
@@ -18,17 +27,17 @@ const Sidebar = () => {
         <ul className="sidebarList">
           <li className="sItem">
             <Link className="link" to="/">
-              Dashboard
+              <i className="bx bx-home"></i> Dashboard
             </Link>
           </li>
           <li className="sItem">
             <Link className="link" to="/marketing">
-              Marketing
+           <GiProgression/>   Marketing
             </Link>
           </li>
           <li className="sItem">
             <li onClick={() => setOpenOne(!openOne)}>
-              Analytics
+              <i className="bx bx-trending-up"></i> Analytics
               <i
                 style={{
                   transform: openOne ? "rotate(180deg)" : "rotate(0deg)",
@@ -40,7 +49,7 @@ const Sidebar = () => {
             <ul style={{ display: openOne ? "block" : "none" }}>
               <li>
                 <Link className="link" to="/analytics/finance">
-                  Finance
+                  <TbCurrencyDollarCanadian /> Finance
                 </Link>
               </li>
               <li className="sItem">
@@ -60,9 +69,9 @@ const Sidebar = () => {
               Order
             </Link>
           </li>
-          <li className="sItem" onClick={() => setOpenTwo(!openTwo)}>
-            <li>
-              Finance
+          <li>
+            <li className="sItem" onClick={() => setOpenTwo(!openTwo)}>
+              <TbCurrencyDollarCanadian /> Finance
               <i
                 style={{
                   transform: openTwo ? "rotate(180deg)" : "rotate(0deg)",
@@ -74,7 +83,7 @@ const Sidebar = () => {
             <ul style={{ display: openTwo ? "block" : "none" }}>
               <li>
                 <Link className="link" to="/finance/finance">
-                  Finance
+                  <TbCurrencyDollarCanadian /> Finance
                 </Link>
               </li>
               <li>
@@ -89,13 +98,13 @@ const Sidebar = () => {
               </li>
               <li>
                 <Link className="link" to="/finance/salary">
-                  Salary
+                  <i className="bx bx-dollar"></i> Salary
                 </Link>
               </li>
             </ul>
           </li>
-          <li className="sItem" onClick={() => setOpenThree(!openThree)}>
-            <li>
+          <li>
+            <li className="sItem" onClick={() => setOpenThree(!openThree)}>
               Students
               <i
                 style={{
@@ -133,9 +142,9 @@ const Sidebar = () => {
               </li>
             </ul>
           </li>
-          <li className="sItem" onClick={() => setOpenFour(!openFour)}>
-            <li>
-              Groups
+          <li>
+            <li className="sItem" onClick={() => setOpenFour(!openFour)}>
+              <MdOutlineGroups /> Groups
               <i
                 style={{
                   transform: openFour ? "rotate(180deg)" : "rotate(0deg)",
@@ -147,12 +156,12 @@ const Sidebar = () => {
             <ul style={{ display: openFour ? "block" : "none" }}>
               <li>
                 <Link className="link" to="/groups/groups">
-                  Groups
+                  <MdOutlineGroups /> Groups
                 </Link>
               </li>
               <li>
                 <Link className="link" to="/groups/classschedule">
-                  Class schedule
+                  <SiGoogleclassroom /> Class schedule
                 </Link>
               </li>
               <li>
@@ -172,9 +181,9 @@ const Sidebar = () => {
               Courses
             </Link>
           </li>
-          <li className="sItem" onClick={() => setOpenFive(!openFive)}>
-            <li>
-              Employees
+          <li>
+            <li className="sItem" onClick={() => setOpenFive(!openFive)}>
+              <GrUserSettings /> Employees
               <i
                 style={{
                   transform: openFive ? "rotate(180deg)" : "rotate(0deg)",
@@ -196,9 +205,9 @@ const Sidebar = () => {
               </li>
             </ul>
           </li>
-          <li className="sItem" onClick={() => setOpenSix(!openSix)}>
-            <li>
-              Settings
+          <li>
+            <li className="sItem" onClick={() => setOpenSix(!openSix)}>
+              <AiOutlineSetting /> Settings
               <i
                 style={{
                   transform: openSix ? "rotate(180deg)" : "rotate(0deg)",
@@ -210,32 +219,32 @@ const Sidebar = () => {
             <ul style={{ display: openSix ? "block" : "none" }}>
               <li>
                 <Link className="link" to="/setting/allsettings">
-                  All Settings
+                  <CiSettings /> All Settings
                 </Link>
               </li>
               <li>
                 <Link className="link" to="/setting/employess">
-                  Employees
+                  <GrUserSettings /> Employees
                 </Link>
               </li>
               <li>
                 <Link className="link" to="/setting/teachers">
-                  Teachers
+                  <AiOutlineUser /> Teachers
                 </Link>
               </li>
               <li>
                 <Link className="link" to="/setting/students">
-                  Students
+                  <BiGroup /> Students
                 </Link>
               </li>
               <li>
                 <Link className="link" to="/setting/sms">
-                  Sms
+                  <FiMessageSquare /> Sms
                 </Link>
               </li>
               <li>
                 <Link className="link" to="/setting/integration">
-                  Integration
+                  <GrIntegration /> Integration
                 </Link>
               </li>
             </ul>

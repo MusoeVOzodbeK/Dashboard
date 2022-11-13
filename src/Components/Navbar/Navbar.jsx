@@ -1,7 +1,6 @@
 import React, { createContext, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import Sidebar from "../Sidebar/Sidebar";
-import Home from "../../Pages/Home/Home";
+import {BsGlobe2} from 'react-icons/bs'
 import "./navbar.css";
 const Navbar = () => {
   return (
@@ -29,6 +28,9 @@ const Navbar = () => {
         </ul>
       </div>
       <div className="nContainerRight">
+        <button className="lang">
+          <BsGlobe2 className="nIcon"/> <p>English</p>
+        </button>
         <button>
           <i className="bx bx-bell"></i>
         </button>
